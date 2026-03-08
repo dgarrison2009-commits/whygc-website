@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "WHYGC — Revenue Operations That Scale",
   description:
-    "We Help You Get Clients. Connecting growth marketing, operations, and account development to drive predictable revenue for your business.",
+    "We Help You Gain Control. WHYGC connects Marketing, Operations, and Accounting into one Revenue Operations system for home service companies.",
 };
 
 export default function RootLayout({

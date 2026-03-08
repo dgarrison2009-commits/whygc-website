@@ -11,13 +11,15 @@ export function CTASection() {
             Ready to build your revenue engine?
           </h2>
           <p className="mx-auto mb-8 max-w-md text-foreground/70">
-            Book a free 30-minute strategy call. We&apos;ll map your current
+            Book a free 15-minute strategy call. We&apos;ll map your current
             pipeline and show you exactly where the gaps are.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <Button className="rounded-full" size="lg">
-              <PhoneCallIcon className="mr-2 size-4" />
-              Book a Strategy Call
+            <Button className="rounded-full" size="lg" asChild>
+              <a href="https://calendly.com/davegarrison/15min" target="_blank" rel="noopener noreferrer">
+                <PhoneCallIcon className="mr-2 size-4" />
+                Book a Strategy Call
+              </a>
             </Button>
             <Button variant="outline" className="rounded-full" size="lg" asChild>
               <a href="/case-studies">

@@ -54,12 +54,14 @@ export function HeroSection() {
 					Stop Losing Leads. <br /> Start Scaling Revenue.
 				</h1>
 				<p className="fade-in slide-in-from-bottom-10 mx-auto max-w-lg animate-in fill-mode-backwards text-center text-base text-foreground/80 tracking-wider delay-200 duration-500 ease-out sm:text-lg md:text-xl">
-					We build the marketing systems, sales automation, <br /> and reporting that service businesses need to grow profitably.
+					We connect Marketing, Operations, and Accounting into one system <br /> so home service companies stop guessing and start commanding their revenue.
 				</p>
 				<div className="fade-in slide-in-from-bottom-10 flex animate-in flex-row flex-wrap items-center justify-center gap-3 fill-mode-backwards pt-2 delay-300 duration-500 ease-out">
-					<Button className="rounded-full" size="lg" variant="secondary">
-						<PhoneCallIcon className="size-4 mr-2" />
-						Book a Strategy Call
+					<Button className="rounded-full" size="lg" variant="secondary" asChild>
+						<a href="https://calendly.com/davegarrison/15min" target="_blank" rel="noopener noreferrer">
+							<PhoneCallIcon className="size-4 mr-2" />
+							Book a Strategy Call
+						</a>
 					</Button>
 					<Button className="rounded-full" size="lg">
 						See How It Works

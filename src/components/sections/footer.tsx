@@ -25,7 +25,7 @@ export function Footer() {
       links: [
         { label: "LinkedIn", href: "#" },
         { label: "Twitter", href: "#" },
-        { label: "Email Us", href: "mailto:dave@whygc.com" },
+        { label: "Email Us", href: "mailto:Sales@WHYGC.com" },
       ],
     },
   ];
@@ -37,9 +37,9 @@ export function Footer() {
           <div>
             <p className="mb-2 text-lg font-bold tracking-tight">WHYGC</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              We Help You Get Clients.
+              We Help You Gain Control.
               <br />
-              Marketing systems and sales automation for service businesses.
+              Revenue operations consulting for home service companies.
             </p>
           </div>
           {columns.map((col) => (

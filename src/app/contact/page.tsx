@@ -20,40 +20,71 @@ export default function ContactPage() {
                 Let&apos;s talk revenue
               </h1>
               <p className="mb-8 text-lg text-foreground/70">
-                Ready to build your revenue engine? Drop us a line or book a
-                free strategy call.
+                Ready to build your revenue engine? Drop us a line or{" "}
+                <a
+                  href="https://calendly.com/davegarrison/15min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-primary"
+                >
+                  book a free strategy call
+                </a>
+                .
               </p>
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex items-start gap-3">
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <MailIcon className="size-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
                     <a
-                      href="mailto:dave@whygc.com"
+                      href="mailto:Sales@WHYGC.com"
                       className="font-medium hover:text-primary"
                     >
-                      dave@whygc.com
+                      Sales@WHYGC.com
+                    </a>
+                    <br />
+                    <a
+                      href="mailto:Billing@WHYGC.com"
+                      className="font-medium hover:text-primary"
+                    >
+                      Billing@WHYGC.com
+                    </a>
+                    <br />
+                    <a
+                      href="mailto:Support@WHYGC.com"
+                      className="font-medium hover:text-primary"
+                    >
+                      Support@WHYGC.com
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <PhoneIcon className="size-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">Available on request</p>
+                    <a
+                      href="tel:+14708525400"
+                      className="font-medium hover:text-primary"
+                    >
+                      (470) 852-5400
+                    </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex items-start gap-3">
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <MapPinIcon className="size-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Atlanta, Georgia</p>
+                    <p className="font-medium">
+                      8735 Dunwoody Place #10636
+                      <br />
+                      Atlanta, GA 30350
+                    </p>
                   </div>
                 </div>
               </div>

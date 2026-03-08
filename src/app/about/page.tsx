@@ -14,20 +14,20 @@ export default function AboutPage() {
             About WHYGC
           </p>
           <h1 className="mb-6 text-4xl tracking-tight md:text-5xl">
-            We Help You Get Clients.
+            We Help You Gain Control.
           </h1>
           <div className="grid gap-12 md:grid-cols-2">
             <div className="space-y-4 text-foreground/80 leading-relaxed">
               <p>
-                WHYGC started with a simple observation: most businesses have the
-                product, the team, and the ambition — but the revenue
-                infrastructure connecting those pieces is broken or missing
-                entirely.
+                WHYGC is a Revenue Operations consultancy that helps home
+                service companies earning $2M–$15M in revenue gain control
+                of the gap between their marketing spend and their actual
+                profit.
               </p>
               <p>
-                We&apos;re a revenue operations company that connects client
-                growth marketing, operations, and account development into one
-                seamless engine. No more siloed teams. No more leaky funnels.
+                We connect Marketing, Operations, and Accounting into one
+                system — so owners stop guessing and start commanding their
+                revenue. No more siloed teams. No more leaky funnels.
               </p>
               <p>
                 Led by Dave, our approach combines AI-powered automation with
