@@ -23,8 +23,8 @@ export function Footer() {
     {
       title: "Connect",
       links: [
-        { label: "LinkedIn", href: "#" },
-        { label: "Twitter", href: "#" },
+        { label: "LinkedIn", href: "https://www.linkedin.com/company/whygc" },
+        { label: "Twitter / X", href: "https://x.com/WHYGC_" },
         { label: "Email Us", href: "mailto:Sales@WHYGC.com" },
       ],
     },

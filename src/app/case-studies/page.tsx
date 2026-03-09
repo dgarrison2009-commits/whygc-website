@@ -7,29 +7,32 @@ import { ArrowRightIcon } from "lucide-react";
 
 const caseStudies = [
   {
-    title: "Atlanta Roofing Company",
-    industry: "Roofing · Home Services",
-    metric: "3x booked jobs in 90 days",
+    slug: "roofing-speed-to-lead",
+    title: "Roofing Company Recaptures Lost Leads",
+    industry: "Roofing · Residential",
+    metric: "From 6-hour response time to under 5 minutes",
     description:
-      "Built a full lead generation system with Google Ads tracked to booked appointments, automated review requests, and a CRM pipeline that gave the owner visibility into every lead for the first time.",
+      "A mid-size roofing company was losing jobs to competitors who responded faster. By implementing automated lead routing and instant follow-up, they stopped leaving money on the table — and started winning the calls they were already paying for.",
     image:
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop",
   },
   {
-    title: "Southeast HVAC Group",
+    slug: "hvac-pipeline-visibility",
+    title: "HVAC Group Gets Full Pipeline Visibility",
     industry: "HVAC · Multi-Location",
-    metric: "40% lower cost per lead",
+    metric: "Zero visibility to real-time revenue tracking",
     description:
-      "Unified marketing and sales operations across three locations. Implemented speed-to-lead automation, estimate follow-up sequences, and a real-time dashboard — cutting cost per lead by 40% in the first quarter.",
+      "A three-location HVAC company had no way to track which marketing dollars were producing booked jobs. A CRM implementation and unified reporting layer gave them the data to cut underperforming spend and double down on what worked.",
     image:
       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80&auto=format&fit=crop",
   },
   {
-    title: "Regional Plumbing Franchise",
-    industry: "Plumbing · Franchise",
-    metric: "$500K pipeline in 6 months",
+    slug: "plumbing-automated-follow-up",
+    title: "Plumbing Company Stops Losing Estimates",
+    industry: "Plumbing · Commercial & Residential",
+    metric: "Estimate follow-up rate doubled",
     description:
-      "Designed a repeatable growth engine for a 5-location franchise — including local SEO, review automation, and capacity-based ad spend controls that scaled marketing with technician availability.",
+      "Half of this plumbing company's estimates went unfollowed. Automated sequences and a structured follow-up process turned forgotten quotes into booked work — without adding headcount.",
     image:
       "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80&auto=format&fit=crop",
   },
@@ -45,11 +48,12 @@ export default function CaseStudiesPage() {
             Case Studies
           </p>
           <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
-            Real results for real service businesses
+            What revenue operations looks like in practice
           </h1>
           <p className="max-w-xl text-lg text-foreground/70">
-            See how we&apos;ve helped service companies build predictable
-            revenue systems that scale.
+            Illustrative scenarios based on the operational challenges we see
+            most often in home service companies — and the systems that solve
+            them.
           </p>
         </section>
 
@@ -57,8 +61,8 @@ export default function CaseStudiesPage() {
           <div className="grid gap-8 md:grid-cols-3">
             {caseStudies.map((cs) => (
               <a
-                key={cs.title}
-                href="#"
+                key={cs.slug}
+                href={`/case-studies/${cs.slug}`}
                 className="group overflow-hidden rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className="aspect-[16/10] overflow-hidden">
@@ -74,14 +78,14 @@ export default function CaseStudiesPage() {
                     {cs.industry}
                   </p>
                   <h3 className="mb-1 text-lg font-semibold">{cs.title}</h3>
-                  <p className="mb-3 text-2xl font-bold tracking-tight text-primary">
+                  <p className="mb-3 text-sm font-semibold tracking-tight text-primary">
                     {cs.metric}
                   </p>
                   <p className="mb-4 text-sm text-muted-foreground leading-relaxed">
                     {cs.description}
                   </p>
                   <span className="inline-flex items-center text-sm font-medium text-primary">
-                    Read more
+                    Read the full scenario
                     <ArrowRightIcon className="ml-1 size-3 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
