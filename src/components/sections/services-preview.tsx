@@ -10,9 +10,9 @@ import {
 const services = [
   {
     icon: MegaphoneIcon,
-    title: "Lead Generation & Marketing Systems",
+    title: "Revenue Capture & Pipeline Systems",
     description:
-      "Google Ads that track to booked jobs. Local SEO that dominates your market. Review automation that builds your reputation on autopilot.",
+      "Fix the revenue leak between 'lead comes in' and 'contract signed.' Speed-to-lead automation, estimate follow-up, and pipeline visibility that recovers 15-30% more revenue from the same leads.",
   },
   {
     icon: CogIcon,

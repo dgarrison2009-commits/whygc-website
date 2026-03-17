@@ -1,9 +1,22 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon, PhoneCallIcon, TrendingUpIcon } from "lucide-react";
-import { LogoCloud } from "@/components/ui/logo-cloud-3";
 
 export function HeroSection() {
+	const [wordIndex, setWordIndex] = useState(0);
+	const words = useMemo(() => ["Control", "Clarity", "Confidence"], []);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setWordIndex((prev) => (prev + 1) % words.length);
+		}, 2500);
+		return () => clearInterval(interval);
+	}, [words]);
+
 	return (
 		<section className="mx-auto w-full max-w-5xl">
 			{/* Top Shades */}
@@ -41,20 +54,35 @@ export function HeroSection() {
 					href="/case-studies"
 				>
 					<TrendingUpIcon className="size-3 text-muted-foreground" />
-					<span className="text-xs">Built for service businesses that want to scale</span>
+					<span className="text-xs">RevOps consulting for service businesses</span>
 					<span className="block h-5 border-l" />
 					<ArrowRightIcon className="size-3 duration-150 ease-out group-hover:translate-x-1" />
 				</a>
 				<h1
 					className={cn(
-						"fade-in slide-in-from-bottom-10 animate-in text-balance fill-mode-backwards text-center text-4xl tracking-tight delay-100 duration-500 ease-out md:text-5xl lg:text-6xl",
+						"fade-in slide-in-from-bottom-10 animate-in fill-mode-backwards text-center text-4xl tracking-tight delay-100 duration-500 ease-out md:text-5xl lg:text-6xl",
 						"text-shadow-[0_0px_50px_theme(--color-foreground/.2)]"
 					)}
 				>
-					Stop Losing Leads. <br /> Start Scaling Revenue.
+					We Help You Gain
+					<span className="relative inline-flex w-[200px] justify-center overflow-hidden align-bottom md:w-[280px] lg:w-[340px]">
+						<AnimatePresence mode="wait">
+							<motion.span
+								key={words[wordIndex]}
+								initial={{ y: 40, opacity: 0 }}
+								animate={{ y: 0, opacity: 1 }}
+								exit={{ y: -40, opacity: 0 }}
+								transition={{ duration: 0.35, ease: "easeInOut" }}
+								className="inline-block text-primary font-semibold"
+							>
+								{words[wordIndex]}
+							</motion.span>
+						</AnimatePresence>
+					</span>
 				</h1>
 				<p className="fade-in slide-in-from-bottom-10 mx-auto max-w-lg animate-in fill-mode-backwards text-center text-base text-foreground/80 tracking-wider delay-200 duration-500 ease-out sm:text-lg md:text-xl">
-					We connect Marketing, Operations, and Accounting into one system <br /> so home service companies stop guessing and start commanding their revenue.
+					We connect Marketing, Operations, and Accounting into one
+					system — so your revenue stops leaking and starts compounding.
 				</p>
 				<div className="fade-in slide-in-from-bottom-10 flex animate-in flex-row flex-wrap items-center justify-center gap-3 fill-mode-backwards pt-2 delay-300 duration-500 ease-out">
 					<Button className="rounded-full" size="lg" variant="secondary" asChild>
@@ -63,9 +91,11 @@ export function HeroSection() {
 							Book a Strategy Call
 						</a>
 					</Button>
-					<Button className="rounded-full" size="lg">
-						See How It Works
-						<ArrowRightIcon className="size-4 ms-2" />
+					<Button className="rounded-full" size="lg" asChild>
+						<a href="/services">
+							See How It Works
+							<ArrowRightIcon className="size-4 ms-2" />
+						</a>
 					</Button>
 				</div>
 			</div>
@@ -77,46 +107,27 @@ export function LogosSection() {
 	return (
 		<section className="relative space-y-4 border-t pt-6 pb-10">
 			<h2 className="text-center font-medium text-lg text-muted-foreground tracking-tight md:text-xl">
-				Trusted by <span className="text-foreground">service companies across the Southeast</span>
+				Powered by <span className="text-foreground">best-in-class tools</span>
 			</h2>
 			<div className="relative z-10 mx-auto max-w-4xl">
-				<LogoCloud logos={logos} />
+				<div className="flex flex-wrap items-center justify-center gap-8 py-4 opacity-60">
+					{tools.map((tool) => (
+						<span key={tool} className="text-sm font-semibold tracking-wide text-foreground/70 uppercase">
+							{tool}
+						</span>
+					))}
+				</div>
 			</div>
 		</section>
 	);
 }
 
-const logos = [
-	{
-		src: "https://storage.efferd.com/logo/nvidia-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/supabase-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/openai-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/turso-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/vercel-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/github-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/claude-wordmark.svg",
-		alt: "Client Logo",
-	},
-	{
-		src: "https://storage.efferd.com/logo/clerk-wordmark.svg",
-		alt: "Client Logo",
-	},
+const tools = [
+	"Attio CRM",
+	"n8n",
+	"Apollo.io",
+	"Instantly",
+	"Google Workspace",
+	"Slack",
+	"Cal.com",
 ];

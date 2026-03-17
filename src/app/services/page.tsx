@@ -13,18 +13,18 @@ import {
 
 const services = [
   {
-    id: "lead-gen",
+    id: "revenue-capture",
     icon: MegaphoneIcon,
-    title: "Lead Generation & Marketing Systems",
-    subtitle: "Get found by the right customers — and convert them",
+    title: "Revenue Capture & Pipeline Systems",
+    subtitle: "Close more of the leads you already have",
     description:
-      "We build the marketing engine that drives qualified leads straight to your phone. Google Ads optimized for booked jobs, local SEO that owns your service area, and review automation that compounds your reputation every single week.",
+      "Most contractors close 20-30% of their estimates — not because the work isn't there, but because revenue leaks out between 'lead comes in' and 'contract signed.' We fix speed-to-lead, follow-up automation, and pipeline visibility so you capture the revenue you're already earning.",
     features: [
-      "Google Ads campaigns tracked to booked jobs, not just clicks",
-      "Local SEO and Google Business Profile optimization",
-      "Automated review request sequences after every completed job",
-      "Referral program setup and tracking",
-      "Landing pages built to convert searchers into booked appointments",
+      "Speed-to-lead automation — respond in under 5 minutes, every time",
+      "Estimate follow-up sequences that close the 30-50% you're losing",
+      "Pipeline visibility — know where every open estimate stands",
+      "Post-job review and referral automation",
+      "Marketing attribution — know which channels drive actual signed contracts",
     ],
   },
   {

@@ -8,54 +8,54 @@ import { cn } from "@/lib/utils";
 
 const tiers = [
   {
-    name: "Foundation",
-    price: "$5,000",
-    period: "/month",
+    name: "PRIME Audit",
+    price: "$2,500",
+    period: "one-time",
     description:
-      "For service businesses ready to stop losing leads and start building a real marketing system.",
+      "A full revenue operations diagnostic for service companies that know something's broken but can't pinpoint where.",
     features: [
-      "Google Ads campaign managed for booked jobs",
-      "Google Business Profile optimization",
-      "Automated review request sequences",
-      "CRM setup and lead pipeline configuration",
-      "Speed-to-lead automation (instant response)",
-      "Monthly performance report",
+      "Complete Profile & Reveal assessment (PRIME phases 1–2)",
+      "CRM and pipeline health audit",
+      "Lead flow and speed-to-lead analysis",
+      "Tech stack evaluation and consolidation plan",
+      "Revenue leakage identification",
+      "Prioritized action plan with quick wins",
     ],
-    cta: "Get Started",
+    cta: "Book Your Audit",
     featured: false,
   },
   {
-    name: "Growth Engine",
-    price: "$8,500",
+    name: "RevOps Buildout",
+    price: "$5,000",
     period: "/month",
     description:
-      "Full marketing + sales automation for companies scaling past $3M and ready to systemize growth.",
+      "For companies ready to implement real systems — not just diagnose problems. We build your revenue engine over 90 days.",
     features: [
-      "Everything in Foundation",
-      "Local SEO and content strategy",
-      "Estimate follow-up and re-engagement sequences",
-      "Post-job review and referral automation",
+      "Everything in the PRIME Audit",
+      "CRM buildout and pipeline automation",
+      "Speed-to-lead and follow-up sequences",
+      "Estimate-to-close workflow optimization",
       "Real-time revenue dashboard",
-      "Dedicated growth strategist",
       "Bi-weekly strategy calls",
+      "90-day implementation roadmap (PRIME phases 3–4)",
     ],
     cta: "Book a Call",
     featured: true,
   },
   {
-    name: "Full RevOps",
-    price: "$12,000",
+    name: "Ongoing Partnership",
+    price: "$3,000",
     period: "/month",
     description:
-      "End-to-end revenue operations for service companies scaling multiple locations or markets.",
+      "Post-buildout support for companies that want a RevOps partner on retainer — not just a one-time project.",
     features: [
-      "Everything in Growth Engine",
-      "Full marketing attribution by channel",
-      "Customer lifetime value analysis",
-      "Capacity planning tied to ad spend",
-      "Multi-location or multi-market support",
+      "Continuous pipeline monitoring and optimization",
+      "Monthly performance reviews with action items",
+      "New automation builds as you scale",
+      "Multi-location or multi-market expansion support",
+      "Priority response and on-demand requests",
       "Quarterly business reviews with growth roadmap",
-      "Priority support and on-demand requests",
+      "Full PRIME cycle management (Measure & Expand)",
     ],
     cta: "Talk to Us",
     featured: false,
@@ -72,11 +72,11 @@ export default function PricingPage() {
             Pricing
           </p>
           <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
-            Invest in systems, not guesswork
+            Revenue operations, not random tactics
           </h1>
           <p className="mx-auto max-w-xl text-lg text-foreground/70">
-            Transparent pricing built for service businesses. No setup fees.
-            Month-to-month after the first 90 days.
+            Transparent pricing built for home service companies. Start with an
+            audit, build your systems, then grow with ongoing support.
           </p>
         </section>
 
@@ -93,7 +93,7 @@ export default function PricingPage() {
               >
                 {tier.featured && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-0.5 text-xs font-medium text-primary-foreground">
-                    Most Popular
+                    Recommended
                   </span>
                 )}
                 <h3 className="mb-1 text-lg font-semibold">{tier.name}</h3>

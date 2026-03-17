@@ -48,7 +48,6 @@ export function Header() {
 						</a>
 					))}
 					<div className="ml-2 flex items-center gap-2">
-						<Button variant="outline" size="sm">Sign In</Button>
 						<Button size="sm">Book a Call</Button>
 					</div>
 				</div>
@@ -80,9 +79,6 @@ export function Header() {
 					))}
 				</div>
 				<div className="flex flex-col gap-2">
-					<Button variant="outline" className="w-full bg-transparent">
-						Sign In
-					</Button>
 					<Button className="w-full">Book a Call</Button>
 				</div>
 			</MobileMenu>

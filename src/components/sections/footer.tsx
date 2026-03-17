@@ -14,7 +14,7 @@ export function Footer() {
     {
       title: "Services",
       links: [
-        { label: "Lead Generation & Marketing", href: "/services#lead-gen" },
+        { label: "Revenue Capture & Pipeline", href: "/services#revenue-capture" },
         { label: "Sales & Ops Automation", href: "/services#sales-automation" },
         { label: "Growth Strategy & Reporting", href: "/services#growth-reporting" },
         { label: "Pricing", href: "/pricing" },
