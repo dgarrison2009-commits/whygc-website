@@ -1,74 +1,74 @@
 @import "tailwindcss";
 
 :root {
-  --card: #faf9f5;
-  --ring: #c96442;
-  --input: #b4b2a7;
-  --muted: #ede9de;
-  --accent: #e9e6dc;
-  --border: #dad9d4;
+  --card: #ffffff;
+  --ring: #B8860B;
+  --input: #D1D5DB;
+  --muted: #F0F1F4;
+  --accent: #E5E7EB;
+  --border: #E5E7EB;
   --radius: 0.5rem;
-  --chart-1: #b05730;
-  --chart-2: #9c87f5;
-  --chart-3: #ded8c4;
-  --chart-4: #dbd3f0;
-  --chart-5: #b4552d;
+  --chart-1: #0A2240;
+  --chart-2: #B8860B;
+  --chart-3: #D4A542;
+  --chart-4: #6B7280;
+  --chart-5: #132D54;
   --popover: #ffffff;
-  --primary: #c96442;
-  --sidebar: #f5f4ee;
-  --secondary: #e9e6dc;
-  --background: #faf9f5;
-  --foreground: #3d3929;
-  --destructive: #141413;
-  --sidebar-ring: #b5b5b5;
-  --sidebar-accent: #e9e6dc;
-  --sidebar-border: #ebebeb;
-  --card-foreground: #141413;
-  --sidebar-primary: #c96442;
-  --muted-foreground: #83827d;
-  --accent-foreground: #28261b;
-  --popover-foreground: #28261b;
+  --primary: #B8860B;
+  --sidebar: #F0F1F4;
+  --secondary: #0A2240;
+  --background: #F7F8FA;
+  --foreground: #1A1A2E;
+  --destructive: #DC2626;
+  --sidebar-ring: #B8860B;
+  --sidebar-accent: #E5E7EB;
+  --sidebar-border: #E5E7EB;
+  --card-foreground: #1A1A2E;
+  --sidebar-primary: #B8860B;
+  --muted-foreground: #6B7280;
+  --accent-foreground: #1A1A2E;
+  --popover-foreground: #1A1A2E;
   --primary-foreground: #ffffff;
-  --sidebar-foreground: #3d3d3a;
-  --secondary-foreground: #535146;
+  --sidebar-foreground: #1A1A2E;
+  --secondary-foreground: #ffffff;
   --destructive-foreground: #ffffff;
-  --sidebar-accent-foreground: #343434;
-  --sidebar-primary-foreground: #fbfbfb;
+  --sidebar-accent-foreground: #1A1A2E;
+  --sidebar-primary-foreground: #ffffff;
 }
 
 .dark {
-  --card: #262624;
-  --ring: #d97757;
-  --input: #52514a;
-  --muted: #1b1b19;
-  --accent: #1a1915;
-  --border: #3e3e38;
-  --chart-1: #b05730;
-  --chart-2: #9c87f5;
-  --chart-3: #1a1915;
-  --chart-4: #2f2b48;
-  --chart-5: #b4552d;
-  --popover: #30302e;
-  --primary: #d97757;
-  --sidebar: #1f1e1d;
-  --secondary: #faf9f5;
-  --background: #262624;
-  --foreground: #c3c0b6;
+  --card: #132D54;
+  --ring: #D4A542;
+  --input: #2A4060;
+  --muted: #0D1F38;
+  --accent: #0D1F38;
+  --border: #1E3A5F;
+  --chart-1: #B8860B;
+  --chart-2: #D4A542;
+  --chart-3: #0D1F38;
+  --chart-4: #1E3A5F;
+  --chart-5: #8B6914;
+  --popover: #132D54;
+  --primary: #D4A542;
+  --sidebar: #0D1F38;
+  --secondary: #F7F8FA;
+  --background: #0A2240;
+  --foreground: #E0E4EA;
   --destructive: #ef4444;
-  --sidebar-ring: #b5b5b5;
-  --sidebar-accent: #0f0f0e;
-  --sidebar-border: #ebebeb;
-  --card-foreground: #faf9f5;
-  --sidebar-primary: #343434;
-  --muted-foreground: #b7b5a9;
-  --accent-foreground: #f5f4ee;
-  --popover-foreground: #e5e5e2;
+  --sidebar-ring: #D4A542;
+  --sidebar-accent: #0D1F38;
+  --sidebar-border: #1E3A5F;
+  --card-foreground: #E0E4EA;
+  --sidebar-primary: #D4A542;
+  --muted-foreground: #8B9BB5;
+  --accent-foreground: #E0E4EA;
+  --popover-foreground: #E0E4EA;
   --primary-foreground: #ffffff;
-  --sidebar-foreground: #c3c0b6;
-  --secondary-foreground: #30302e;
+  --sidebar-foreground: #8B9BB5;
+  --secondary-foreground: #0A2240;
   --destructive-foreground: #ffffff;
-  --sidebar-accent-foreground: #c3c0b6;
-  --sidebar-primary-foreground: #fbfbfb;
+  --sidebar-accent-foreground: #8B9BB5;
+  --sidebar-primary-foreground: #ffffff;
 }
 
 @theme inline {
@@ -105,8 +105,9 @@
   --color-destructive-foreground: var(--destructive-foreground);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-sans: var(--font-source-sans), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-mono: ui-monospace, 'Consolas', monospace;
 }
 
 body {
@@ -115,4 +116,8 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif), Georgia, serif;
 }

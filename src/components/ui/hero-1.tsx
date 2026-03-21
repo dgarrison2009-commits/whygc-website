@@ -107,7 +107,7 @@ export function LogosSection() {
 	return (
 		<section className="relative space-y-4 border-t pt-6 pb-10">
 			<h2 className="text-center font-medium text-lg text-muted-foreground tracking-tight md:text-xl">
-				Powered by <span className="text-foreground">best-in-class tools</span>
+				We integrate with <span className="text-foreground">the tools your team already uses</span>
 			</h2>
 			<div className="relative z-10 mx-auto max-w-4xl">
 				<div className="flex flex-wrap items-center justify-center gap-8 py-4 opacity-60">
@@ -123,11 +123,12 @@ export function LogosSection() {
 }
 
 const tools = [
-	"Attio CRM",
-	"n8n",
-	"Apollo.io",
-	"Instantly",
-	"Google Workspace",
-	"Slack",
-	"Cal.com",
+	"ServiceTitan",
+	"JobNimbus",
+	"Housecall Pro",
+	"QuickBooks",
+	"Jobber",
+	"Google LSA",
+	"CallRail",
+	"CompanyCam",
 ];

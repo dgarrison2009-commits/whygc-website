@@ -118,9 +118,9 @@ function MobileMenu({ open, children, className, ...props }: MobileMenuProps) {
 }
 
 export const WHYGCLogo = (props: React.ComponentProps<"svg">) => (
-	<svg viewBox="0 0 200 28" fill="currentColor" {...props}>
-		<text x="0" y="22" fontFamily="system-ui, sans-serif" fontWeight="800" fontSize="22" letterSpacing="-0.5">
-			WHYGC
+	<svg viewBox="0 0 220 28" fill="currentColor" {...props}>
+		<text x="0" y="22" fontFamily="'Source Sans 3', system-ui, sans-serif" fontWeight="900" fontSize="22" letterSpacing="1">
+			<tspan>WHYG</tspan><tspan fill="#B8860B">C</tspan>
 		</text>
 	</svg>
 );
