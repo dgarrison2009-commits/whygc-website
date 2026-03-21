@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-16 md:px-8">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
             About WHYGC
@@ -42,6 +42,8 @@ export default function AboutPage() {
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&auto=format&fit=crop"
                   alt="WHYGC team"
                   className="size-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

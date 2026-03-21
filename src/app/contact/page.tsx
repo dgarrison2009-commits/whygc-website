@@ -1,15 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import { Header } from "@/components/ui/header-1";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
 
 export default function ContactPage() {
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-20 md:px-8">
           <div className="grid gap-12 md:grid-cols-2">
             <div>
@@ -19,10 +22,10 @@ export default function ContactPage() {
               <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
                 Let&apos;s talk revenue
               </h1>
-              <p className="mb-8 text-lg text-foreground/70">
+              <p className="mb-8 text-lg text-foreground/80">
                 Ready to build your revenue engine? Drop us a line or{" "}
                 <a
-                  href="https://calendly.com/davegarrison/15min"
+                  href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary"
@@ -92,7 +95,7 @@ export default function ContactPage() {
 
             <div className="rounded-xl border bg-card p-6 shadow-sm">
               <h2 className="mb-6 text-xl font-semibold">Send a message</h2>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
                     <label className="mb-1 block text-sm font-medium">
@@ -143,9 +146,14 @@ export default function ContactPage() {
                     placeholder="Tell us about your revenue goals..."
                   />
                 </div>
-                <Button className="w-full rounded-full" size="lg" type="submit">
-                  Send Message
+                <Button className="w-full rounded-full" size="lg" type="submit" disabled={submitted}>
+                  {submitted ? "Message Sent" : "Send Message"}
                 </Button>
+                {submitted && (
+                  <p className="text-center text-sm text-primary font-medium mt-4">
+                    Thank you! We&apos;ll be in touch within 24 hours.
+                  </p>
+                )}
               </form>
             </div>
           </div>

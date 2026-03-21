@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <HeroSection />
         <LogosSection />
         <ServicesPreview />

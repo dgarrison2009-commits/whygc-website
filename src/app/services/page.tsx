@@ -63,7 +63,7 @@ export default function ServicesPage() {
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-16 md:px-8">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
             Services
@@ -71,7 +71,7 @@ export default function ServicesPage() {
           <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
             The systems your service business is missing
           </h1>
-          <p className="max-w-xl text-lg text-foreground/70">
+          <p className="max-w-xl text-lg text-foreground/80">
             Three integrated service lines that fix your process first, then
             scale what works — so growth is predictable, not chaotic.
           </p>
@@ -84,9 +84,7 @@ export default function ServicesPage() {
             className="mx-auto w-full max-w-5xl border-t px-4 py-16 md:px-8"
           >
             <div
-              className={`grid items-start gap-12 md:grid-cols-2 ${
-                i % 2 === 1 ? "md:direction-rtl" : ""
-              }`}
+              className="grid items-start gap-12 md:grid-cols-2"
             >
               <div>
                 <div className="mb-4 flex size-12 items-center justify-center rounded-xl bg-primary/10">
@@ -96,7 +94,7 @@ export default function ServicesPage() {
                   {s.title}
                 </h2>
                 <p className="mb-4 text-primary">{s.subtitle}</p>
-                <p className="mb-6 text-foreground/70 leading-relaxed">
+                <p className="mb-6 text-foreground/80 leading-relaxed">
                   {s.description}
                 </p>
                 <Button className="rounded-full" size="lg">

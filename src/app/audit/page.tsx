@@ -70,7 +70,7 @@ function AuditContent() {
           </a>
         </div>
       )}
-      <main className="grow">
+      <main id="main-content" className="grow">
         {/* Hero */}
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-12 md:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
@@ -81,7 +81,7 @@ function AuditContent() {
               <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
                 Find out exactly where your revenue is leaking
               </h1>
-              <p className="mb-6 text-lg text-foreground/70 leading-relaxed">
+              <p className="mb-6 text-lg text-foreground/80 leading-relaxed">
                 In 15 minutes, we&apos;ll walk through your pipeline and show
                 you the gaps between your marketing spend and your booked jobs.
                 No pitch. No obligation. Just clarity.
@@ -89,7 +89,7 @@ function AuditContent() {
               <div className="flex flex-wrap items-center gap-3">
                 <Button className="rounded-full" size="lg" asChild>
                   <a
-                    href="https://calendly.com/davegarrison/15min"
+                    href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -109,6 +109,8 @@ function AuditContent() {
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop"
                   alt="Revenue dashboard showing pipeline metrics"
                   className="size-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -168,7 +170,7 @@ function AuditContent() {
                 <h2 className="mb-4 text-3xl tracking-tight md:text-4xl">
                   A complete revenue operations diagnostic
                 </h2>
-                <p className="mb-8 text-foreground/70 leading-relaxed">
+                <p className="mb-8 text-foreground/80 leading-relaxed">
                   This isn&apos;t a generic checklist. We look at your actual
                   systems, your actual data, and your actual pipeline — then
                   tell you exactly what to fix first.
@@ -176,7 +178,7 @@ function AuditContent() {
                 <ul className="space-y-4">
                   {auditIncludes.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <CheckCircle2Icon className="mt-0.5 size-5 shrink-0 text-primary" />
+                      <CheckCircle2Icon className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
                       <span className="text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -195,7 +197,7 @@ function AuditContent() {
                 </p>
                 <Button className="w-full rounded-full" size="lg" asChild>
                   <a
-                    href="https://calendly.com/davegarrison/15min"
+                    href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

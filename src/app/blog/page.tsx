@@ -38,7 +38,7 @@ export default function BlogPage() {
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-16 md:px-8">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
             Blog
@@ -46,7 +46,7 @@ export default function BlogPage() {
           <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
             Insights for revenue leaders
           </h1>
-          <p className="max-w-xl text-lg text-foreground/70">
+          <p className="max-w-xl text-lg text-foreground/80">
             Strategies, playbooks, and lessons from the front lines of revenue
             operations.
           </p>
@@ -66,6 +66,8 @@ export default function BlogPage() {
                     src={post.image}
                     alt={post.title}
                     className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="p-5">
@@ -76,9 +78,9 @@ export default function BlogPage() {
                     <span>&middot;</span>
                     <span>{post.date}</span>
                   </div>
-                  <h3 className="mb-2 font-semibold leading-snug">
+                  <h2 className="mb-2 font-semibold leading-snug">
                     {post.title}
-                  </h3>
+                  </h2>
                   <p className="mb-3 text-sm text-muted-foreground leading-relaxed">
                     {post.excerpt}
                   </p>

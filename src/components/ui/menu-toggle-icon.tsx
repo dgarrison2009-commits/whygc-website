@@ -20,6 +20,7 @@ export function MenuToggleIcon({
 }: MenuToggleProps) {
 	return (
 		<svg
+			aria-hidden="true"
 			strokeWidth={strokeWidth}
 			fill={fill}
 			stroke={stroke}

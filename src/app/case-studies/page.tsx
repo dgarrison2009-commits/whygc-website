@@ -42,7 +42,7 @@ export default function CaseStudiesPage() {
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-16 md:px-8">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
             Case Studies
@@ -50,7 +50,7 @@ export default function CaseStudiesPage() {
           <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
             What revenue operations looks like in practice
           </h1>
-          <p className="max-w-xl text-lg text-foreground/70">
+          <p className="max-w-xl text-lg text-foreground/80">
             Illustrative scenarios based on the operational challenges we see
             most often in home service companies — and the systems that solve
             them.
@@ -67,17 +67,19 @@ export default function CaseStudiesPage() {
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={cs.image}
                     alt={cs.title}
                     className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="p-5">
                   <p className="mb-1 text-xs font-medium uppercase tracking-widest text-primary">
                     {cs.industry}
                   </p>
-                  <h3 className="mb-1 text-lg font-semibold">{cs.title}</h3>
+                  <h2 className="mb-1 text-lg font-semibold">{cs.title}</h2>
                   <p className="mb-3 text-sm font-semibold tracking-tight text-primary">
                     {cs.metric}
                   </p>

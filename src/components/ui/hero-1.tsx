@@ -9,13 +9,23 @@ import { ArrowRightIcon, PhoneCallIcon, TrendingUpIcon } from "lucide-react";
 export function HeroSection() {
 	const [wordIndex, setWordIndex] = useState(0);
 	const words = useMemo(() => ["Control", "Clarity", "Confidence"], []);
+	const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
 	useEffect(() => {
+		const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+		setPrefersReducedMotion(mq.matches);
+		const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+		mq.addEventListener('change', handler);
+		return () => mq.removeEventListener('change', handler);
+	}, []);
+
+	useEffect(() => {
+		if (prefersReducedMotion) return;
 		const interval = setInterval(() => {
 			setWordIndex((prev) => (prev + 1) % words.length);
 		}, 2500);
 		return () => clearInterval(interval);
-	}, [words]);
+	}, [words, prefersReducedMotion]);
 
 	return (
 		<section className="mx-auto w-full max-w-5xl">
@@ -86,7 +96,7 @@ export function HeroSection() {
 				</p>
 				<div className="fade-in slide-in-from-bottom-10 flex animate-in flex-row flex-wrap items-center justify-center gap-3 fill-mode-backwards pt-2 delay-300 duration-500 ease-out">
 					<Button className="rounded-full" size="lg" variant="secondary" asChild>
-						<a href="https://calendly.com/davegarrison/15min" target="_blank" rel="noopener noreferrer">
+						<a href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website" target="_blank" rel="noopener noreferrer">
 							<PhoneCallIcon className="size-4 mr-2" />
 							Book a Strategy Call
 						</a>
@@ -112,7 +122,7 @@ export function LogosSection() {
 			<div className="relative z-10 mx-auto max-w-4xl">
 				<div className="flex flex-wrap items-center justify-center gap-8 py-4 opacity-60">
 					{tools.map((tool) => (
-						<span key={tool} className="text-sm font-semibold tracking-wide text-foreground/70 uppercase">
+						<span key={tool} className="text-sm font-semibold tracking-wide text-foreground/80 uppercase">
 							{tool}
 						</span>
 					))}

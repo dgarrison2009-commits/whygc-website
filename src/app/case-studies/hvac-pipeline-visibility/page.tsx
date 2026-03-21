@@ -32,7 +32,7 @@ export default function HvacPipelineVisibilityPage() {
           <h1 className="mb-4 text-3xl tracking-tight md:text-4xl">
             HVAC Group Gets Full Pipeline Visibility
           </h1>
-          <p className="text-lg text-foreground/70 leading-relaxed">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             A three-location HVAC company had marketing running across multiple
             channels — but no clear picture of which dollars were producing
             booked jobs.
@@ -43,10 +43,11 @@ export default function HvacPipelineVisibilityPage() {
         <section className="mx-auto w-full max-w-3xl px-4 pb-12 md:px-8">
           <div className="overflow-hidden rounded-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80&auto=format&fit=crop"
+            <img loading="lazy" decoding="async"
+              loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80&auto=format&fit=crop"
               alt="HVAC technician at work"
               className="aspect-[2/1] w-full object-cover"
+              decoding="async"
             />
           </div>
         </section>
@@ -167,14 +168,14 @@ export default function HvacPipelineVisibilityPage() {
             <h2 className="mb-3 text-2xl tracking-tight">
               Not sure what your pipeline actually looks like?
             </h2>
-            <p className="mx-auto mb-6 max-w-md text-foreground/70">
+            <p className="mx-auto mb-6 max-w-md text-foreground/80">
               We will map your current lead-to-revenue flow and identify
               where visibility breaks down — in a free 15-minute call.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button className="rounded-full" size="lg" asChild>
                 <a
-                  href="https://calendly.com/davegarrison/15min"
+                  href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

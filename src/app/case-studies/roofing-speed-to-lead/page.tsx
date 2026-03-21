@@ -32,7 +32,7 @@ export default function RoofingSpeedToLeadPage() {
           <h1 className="mb-4 text-3xl tracking-tight md:text-4xl">
             Roofing Company Recaptures Lost Leads
           </h1>
-          <p className="text-lg text-foreground/70 leading-relaxed">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             A mid-size residential roofing company was spending thousands on lead
             generation — but losing most of those leads before anyone picked up
             the phone.
@@ -43,10 +43,11 @@ export default function RoofingSpeedToLeadPage() {
         <section className="mx-auto w-full max-w-3xl px-4 pb-12 md:px-8">
           <div className="overflow-hidden rounded-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80&auto=format&fit=crop"
+            <img loading="lazy" decoding="async"
+              loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80&auto=format&fit=crop"
               alt="Roofing work in progress"
               className="aspect-[2/1] w-full object-cover"
+              decoding="async"
             />
           </div>
         </section>
@@ -165,14 +166,14 @@ export default function RoofingSpeedToLeadPage() {
             <h2 className="mb-3 text-2xl tracking-tight">
               Wondering how fast your team responds to leads?
             </h2>
-            <p className="mx-auto mb-6 max-w-md text-foreground/70">
+            <p className="mx-auto mb-6 max-w-md text-foreground/80">
               We can audit your current lead flow in a 15-minute call and show
               you exactly where the gaps are.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button className="rounded-full" size="lg" asChild>
                 <a
-                  href="https://calendly.com/davegarrison/15min"
+                  href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

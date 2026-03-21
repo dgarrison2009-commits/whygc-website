@@ -66,7 +66,7 @@ export default function PricingPage() {
   return (
     <div className="flex w-full flex-col">
       <Header />
-      <main className="grow">
+      <main id="main-content" className="grow">
         <section className="mx-auto w-full max-w-5xl px-4 pt-24 pb-16 text-center md:px-8">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
             Pricing
@@ -74,7 +74,7 @@ export default function PricingPage() {
           <h1 className="mb-4 text-4xl tracking-tight md:text-5xl">
             Revenue operations, not random tactics
           </h1>
-          <p className="mx-auto max-w-xl text-lg text-foreground/70">
+          <p className="mx-auto max-w-xl text-lg text-foreground/80">
             Transparent pricing built for home service companies. Start with an
             audit, build your systems, then grow with ongoing support.
           </p>
@@ -96,7 +96,7 @@ export default function PricingPage() {
                     Recommended
                   </span>
                 )}
-                <h3 className="mb-1 text-lg font-semibold">{tier.name}</h3>
+                <h2 className="mb-1 text-lg font-semibold">{tier.name}</h2>
                 <div className="mb-2 flex items-baseline gap-1">
                   <span className="text-3xl font-bold tracking-tight">
                     {tier.price}
@@ -111,7 +111,7 @@ export default function PricingPage() {
                 <ul className="mb-8 grow space-y-3">
                   {tier.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2Icon className="mt-0.5 size-4 shrink-0 text-primary" />
+                      <CheckCircle2Icon className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                       {f}
                     </li>
                   ))}

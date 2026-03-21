@@ -19,7 +19,7 @@ export function WhyUs() {
           <h2 className="mb-4 text-3xl tracking-tight md:text-4xl">
             We fix the process first. Then we scale it.
           </h2>
-          <p className="mb-8 text-foreground/70 leading-relaxed">
+          <p className="mb-8 text-foreground/80 leading-relaxed">
             Most agencies hand you leads and walk away. We build the entire
             system — from the ad click to the booked job to the 5-star review —
             so nothing falls through the cracks and growth compounds.
@@ -27,7 +27,7 @@ export function WhyUs() {
           <ul className="space-y-4">
             {points.map((p) => (
               <li key={p} className="flex items-start gap-3">
-                <CheckCircle2Icon className="mt-0.5 size-5 shrink-0 text-primary" />
+                <CheckCircle2Icon className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
                 <span className="text-sm leading-relaxed">{p}</span>
               </li>
             ))}
@@ -40,6 +40,8 @@ export function WhyUs() {
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&auto=format&fit=crop"
               alt="Team collaborating on revenue strategy"
               className="size-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

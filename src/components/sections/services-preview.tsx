@@ -38,7 +38,7 @@ export function ServicesPreview() {
         <h2 className="text-3xl tracking-tight md:text-4xl">
           The systems your business is missing
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-foreground/70">
+        <p className="mx-auto mt-4 max-w-xl text-foreground/80">
           You don&apos;t need more leads thrown at a broken process. We fix the
           process first, then scale what works.
         </p>
@@ -52,7 +52,7 @@ export function ServicesPreview() {
             )}
           >
             <div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-primary/10">
-              <s.icon className="size-5 text-primary" />
+              <s.icon className="size-5 text-primary" aria-hidden="true" />
             </div>
             <h3 className="mb-2 text-lg font-semibold">{s.title}</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">

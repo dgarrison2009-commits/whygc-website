@@ -32,7 +32,7 @@ export default function PlumbingAutomatedFollowUpPage() {
           <h1 className="mb-4 text-3xl tracking-tight md:text-4xl">
             Plumbing Company Stops Losing Estimates
           </h1>
-          <p className="text-lg text-foreground/70 leading-relaxed">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             A growing plumbing company was sending out estimates — but had no
             system to follow up. Half their quotes disappeared into the void.
           </p>
@@ -42,10 +42,11 @@ export default function PlumbingAutomatedFollowUpPage() {
         <section className="mx-auto w-full max-w-3xl px-4 pb-12 md:px-8">
           <div className="overflow-hidden rounded-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80&auto=format&fit=crop"
+            <img loading="lazy" decoding="async"
+              loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80&auto=format&fit=crop"
               alt="Professional plumbing work"
               className="aspect-[2/1] w-full object-cover"
+              decoding="async"
             />
           </div>
         </section>
@@ -171,14 +172,14 @@ export default function PlumbingAutomatedFollowUpPage() {
             <h2 className="mb-3 text-2xl tracking-tight">
               How many estimates is your team sending without follow-up?
             </h2>
-            <p className="mx-auto mb-6 max-w-md text-foreground/70">
+            <p className="mx-auto mb-6 max-w-md text-foreground/80">
               Let us look at your current process and show you where automated
               follow-up can recover lost revenue.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Button className="rounded-full" size="lg" asChild>
                 <a
-                  href="https://calendly.com/davegarrison/15min"
+                  href="https://calendly.com/davegarrison/15min?utm_source=whygc&utm_medium=website"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
