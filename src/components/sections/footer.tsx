@@ -35,7 +35,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-5xl px-4 py-12 md:px-8">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <p className="mb-2 text-lg font-black tracking-wide">WHYG<span className="text-primary">C</span></p>
+            <p className="mb-2 text-xl font-black tracking-tight">WHYG<span className="text-primary">C</span></p>
             <p className="text-sm text-muted-foreground leading-relaxed">
               We Help You Gain Control.
               <br />

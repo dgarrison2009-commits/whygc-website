@@ -119,5 +119,6 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-serif), Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif !important;
+  font-weight: 700;
 }

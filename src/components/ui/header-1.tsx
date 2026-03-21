@@ -38,8 +38,8 @@ export function Header() {
 			})}
 		>
 			<nav className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4">
-				<a href="/" className="hover:bg-accent rounded-md p-2 flex items-center gap-2">
-					<WHYGCLogo className="h-5" />
+				<a href="/" className="hover:bg-accent rounded-md p-2 flex items-center gap-2" aria-label="WHYGC Home">
+					<span className="text-xl font-black tracking-tight text-foreground">WHYG<span className="text-primary">C</span></span>
 				</a>
 				<div className="hidden items-center gap-1 lg:flex">
 					{links.map((link) => (
