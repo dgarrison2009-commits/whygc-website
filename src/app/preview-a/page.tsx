@@ -124,13 +124,13 @@ export default function PreviewA() {
         crossOrigin="anonymous"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Sans+3:wght@400;500;600;700;900&display=swap"
         rel="stylesheet"
       />
 
       <div
         style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "'Source Sans 3', sans-serif",
           color: C.text,
           background: C.bg,
           minHeight: "100vh",
@@ -143,7 +143,7 @@ export default function PreviewA() {
             color: "#FFFFFF",
             textAlign: "center",
             padding: "10px 0",
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "'Source Sans 3', sans-serif",
             fontWeight: 600,
             fontSize: "0.8rem",
             letterSpacing: "0.08em",
@@ -170,11 +170,11 @@ export default function PreviewA() {
             {/* Logo */}
             <div
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 800,
+                fontFamily: "'Source Sans 3', sans-serif",
+                fontWeight: 900,
                 fontSize: "1.5rem",
                 color: C.primary,
-                letterSpacing: "-0.02em",
+                letterSpacing: "0.04em",
               }}
             >
               WHYG
@@ -189,7 +189,7 @@ export default function PreviewA() {
               style={{
                 background: C.accent,
                 color: "#FFFFFF",
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 600,
                 fontSize: "0.875rem",
                 padding: "10px 24px",
@@ -216,7 +216,7 @@ export default function PreviewA() {
           <div className="mx-auto" style={{ maxWidth: 1120 }}>
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 700,
                 fontSize: "0.75rem",
                 letterSpacing: "0.14em",
@@ -230,8 +230,8 @@ export default function PreviewA() {
 
             <h1
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 800,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
                 lineHeight: 1.1,
                 color: C.text,
@@ -265,7 +265,7 @@ export default function PreviewA() {
                 style={{
                   background: C.accent,
                   color: "#FFFFFF",
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Source Sans 3', sans-serif",
                   fontWeight: 600,
                   fontSize: "1rem",
                   padding: "14px 32px",
@@ -291,7 +291,7 @@ export default function PreviewA() {
                 style={{
                   background: "transparent",
                   color: C.primary,
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Source Sans 3', sans-serif",
                   fontWeight: 600,
                   fontSize: "1rem",
                   padding: "14px 32px",
@@ -320,7 +320,7 @@ export default function PreviewA() {
           <div className="mx-auto" style={{ maxWidth: 1120 }}>
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 600,
                 fontSize: "0.75rem",
                 letterSpacing: "0.1em",
@@ -333,8 +333,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(1.5rem, 3vw, 2rem)",
                 color: C.text,
                 marginBottom: 40,
@@ -376,7 +376,7 @@ export default function PreviewA() {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontFamily: "'Source Sans 3', sans-serif",
                       fontWeight: 700,
                       fontSize: "0.85rem",
                       flexShrink: 0,
@@ -405,7 +405,7 @@ export default function PreviewA() {
           <div className="mx-auto" style={{ maxWidth: 1120 }}>
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 600,
                 fontSize: "0.75rem",
                 letterSpacing: "0.1em",
@@ -418,8 +418,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: C.text,
                 marginBottom: 48,
@@ -451,8 +451,8 @@ export default function PreviewA() {
                 >
                   <p
                     style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
-                      fontWeight: 800,
+                      fontFamily: "'Libre Caslon Display', serif",
+                      fontWeight: 400,
                       fontSize: "2.5rem",
                       color: C.accent,
                       marginBottom: 8,
@@ -484,7 +484,7 @@ export default function PreviewA() {
           <div className="mx-auto" style={{ maxWidth: 1120 }}>
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 600,
                 fontSize: "0.75rem",
                 letterSpacing: "0.1em",
@@ -497,8 +497,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: "#FFFFFF",
                 marginBottom: 48,
@@ -546,7 +546,7 @@ export default function PreviewA() {
                     </div>
                     <h3
                       style={{
-                        fontFamily: "'Space Grotesk', sans-serif",
+                        fontFamily: "'Source Sans 3', sans-serif",
                         fontWeight: 700,
                         fontSize: "1.15rem",
                         color: "#FFFFFF",
@@ -576,7 +576,7 @@ export default function PreviewA() {
           <div className="mx-auto" style={{ maxWidth: 1120 }}>
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 600,
                 fontSize: "0.75rem",
                 letterSpacing: "0.1em",
@@ -589,8 +589,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: C.text,
                 marginBottom: 56,
@@ -605,8 +605,8 @@ export default function PreviewA() {
                 <div key={i} style={{ textAlign: "left" }}>
                   <div
                     style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
-                      fontWeight: 800,
+                      fontFamily: "'Libre Caslon Display', serif",
+                      fontWeight: 400,
                       fontSize: "2.5rem",
                       color: C.accent,
                       lineHeight: 1,
@@ -617,7 +617,7 @@ export default function PreviewA() {
                   </div>
                   <p
                     style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontFamily: "'Source Sans 3', sans-serif",
                       fontWeight: 700,
                       fontSize: "1rem",
                       color: C.text,
@@ -646,7 +646,7 @@ export default function PreviewA() {
           <div className="mx-auto" style={{ maxWidth: 1120 }}>
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "'Source Sans 3', sans-serif",
                 fontWeight: 600,
                 fontSize: "0.75rem",
                 letterSpacing: "0.1em",
@@ -659,8 +659,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: C.text,
                 marginBottom: 48,
@@ -691,7 +691,7 @@ export default function PreviewA() {
               >
                 <h3
                   style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontFamily: "'Source Sans 3', sans-serif",
                     fontWeight: 700,
                     fontSize: "1.35rem",
                     color: C.text,
@@ -719,7 +719,7 @@ export default function PreviewA() {
                   className="inline-flex items-center gap-2"
                   style={{
                     color: C.accent,
-                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontFamily: "'Source Sans 3', sans-serif",
                     fontWeight: 600,
                     fontSize: "0.95rem",
                     textDecoration: "none",
@@ -750,7 +750,7 @@ export default function PreviewA() {
               >
                 <h3
                   style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontFamily: "'Source Sans 3', sans-serif",
                     fontWeight: 700,
                     fontSize: "1.35rem",
                     color: C.text,
@@ -776,7 +776,7 @@ export default function PreviewA() {
                   className="inline-flex items-center gap-2"
                   style={{
                     color: C.accent,
-                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontFamily: "'Source Sans 3', sans-serif",
                     fontWeight: 600,
                     fontSize: "0.95rem",
                     textDecoration: "none",
@@ -798,8 +798,8 @@ export default function PreviewA() {
           >
             <h2
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
+                fontFamily: "'Libre Caslon Display', serif",
+                fontWeight: 400,
                 fontSize: "clamp(1.5rem, 3.5vw, 2.5rem)",
                 color: "#FFFFFF",
                 marginBottom: 20,
@@ -832,7 +832,7 @@ export default function PreviewA() {
                 style={{
                   background: C.accent,
                   color: "#FFFFFF",
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Source Sans 3', sans-serif",
                   fontWeight: 600,
                   fontSize: "1rem",
                   padding: "14px 32px",
@@ -858,7 +858,7 @@ export default function PreviewA() {
                 style={{
                   background: "transparent",
                   color: "#FFFFFF",
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "'Source Sans 3', sans-serif",
                   fontWeight: 600,
                   fontSize: "1rem",
                   padding: "14px 32px",
