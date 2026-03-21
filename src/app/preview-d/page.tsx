@@ -39,6 +39,14 @@ const tools = [
   "Podium",
   "AccuLynx",
   "Roofr",
+  "Salesforce",
+  "HubSpot",
+  "Google Workspace",
+  "Microsoft 365",
+  "Slack",
+  "Zapier",
+  "Stripe",
+  "Calendly",
 ];
 
 // ─── Services ───────────────────────────────────────────────────────────────
@@ -986,6 +994,62 @@ export default function PreviewD() {
         </div>
       </section>
 
+      {/* ── DARK: Credibility Badges ─────────────────────────────────── */}
+      <section
+        style={{
+          background: dark.bg,
+          borderTop: `1px solid ${dark.border}`,
+          padding: "48px clamp(24px, 8vw, 120px)",
+          textAlign: "center",
+        }}
+      >
+        <p
+          style={{
+            fontFamily: "'Source Sans 3', sans-serif",
+            fontSize: "0.7rem",
+            fontWeight: 600,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase" as const,
+            color: dark.muted,
+            marginBottom: "24px",
+          }}
+        >
+          Member &amp; Certified
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "32px",
+            opacity: 0.5,
+          }}
+        >
+          {[
+            "HubSpot Certified",
+            "Revenue Operations Alliance",
+            "AASBC",
+            "BBB Accredited",
+            "Atlanta Chamber",
+            "SCORE Mentor",
+          ].map((badge) => (
+            <span
+              key={badge}
+              style={{
+                fontFamily: "'Source Sans 3', sans-serif",
+                fontSize: "0.75rem",
+                fontWeight: 600,
+                color: dark.text,
+                letterSpacing: "0.05em",
+                textTransform: "uppercase" as const,
+              }}
+            >
+              {badge}
+            </span>
+          ))}
+        </div>
+      </section>
+
       {/* ── DARK: Footer ───────────────────────────────────────────────── */}
       <footer
         style={{
@@ -1008,7 +1072,7 @@ export default function PreviewD() {
             color: "#FFFFFF",
           }}
         >
-          WHY<span style={{ color: accent }}>G</span>C
+          WHYG<span style={{ color: accent }}>C</span>
         </div>
 
         <div
