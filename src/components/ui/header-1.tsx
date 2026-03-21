@@ -14,7 +14,7 @@ export function Header() {
 		{ label: 'Services', href: '/services' },
 		{ label: 'About', href: '/about' },
 		{ label: 'Case Studies', href: '/case-studies' },
-		{ label: 'Pricing', href: '/pricing' },
+		{ label: 'How We Work', href: '/pricing' },
 		{ label: 'Blog', href: '/blog' },
 		{ label: 'Contact', href: '/contact' },
 	];
