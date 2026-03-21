@@ -124,7 +124,7 @@ export default function PreviewA() {
         crossOrigin="anonymous"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Sans+3:wght@400;500;600;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;900&display=swap"
         rel="stylesheet"
       />
 
@@ -230,8 +230,8 @@ export default function PreviewA() {
 
             <h1
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
                 lineHeight: 1.1,
                 color: C.text,
@@ -333,8 +333,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(1.5rem, 3vw, 2rem)",
                 color: C.text,
                 marginBottom: 40,
@@ -418,8 +418,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: C.text,
                 marginBottom: 48,
@@ -497,8 +497,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: "#FFFFFF",
                 marginBottom: 48,
@@ -589,8 +589,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: C.text,
                 marginBottom: 56,
@@ -659,8 +659,8 @@ export default function PreviewA() {
             </p>
             <h2
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 color: C.text,
                 marginBottom: 48,
@@ -798,8 +798,8 @@ export default function PreviewA() {
           >
             <h2
               style={{
-                fontFamily: "'Libre Caslon Display', serif",
-                fontWeight: 400,
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
                 fontSize: "clamp(1.5rem, 3.5vw, 2.5rem)",
                 color: "#FFFFFF",
                 marginBottom: 20,
