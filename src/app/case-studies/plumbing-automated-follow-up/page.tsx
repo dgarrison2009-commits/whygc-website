@@ -42,10 +42,11 @@ export default function PlumbingAutomatedFollowUpPage() {
         <section className="mx-auto w-full max-w-3xl px-4 pb-12 md:px-8">
           <div className="overflow-hidden rounded-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img loading="lazy" decoding="async"
-              loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80&auto=format&fit=crop"
+            <img
+              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80&auto=format&fit=crop"
               alt="Professional plumbing work"
               className="aspect-[2/1] w-full object-cover"
+              loading="lazy"
               decoding="async"
             />
           </div>

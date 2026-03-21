@@ -67,7 +67,7 @@ export default function CaseStudiesPage() {
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" decoding="async"
+                  <img
                     src={cs.image}
                     alt={cs.title}
                     className="size-full object-cover transition-transform duration-300 group-hover:scale-105"

@@ -44,7 +44,7 @@ export default function RootLayout({
           `}
         </Script>
         <noscript>
-          <img loading="lazy" decoding="async"
+          <img
             height="1"
             width="1"
             style={{ display: "none" }}
