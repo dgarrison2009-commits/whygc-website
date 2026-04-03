@@ -23,7 +23,7 @@ const light = {
 const accent = "#B8860B";
 const accentHover = "#D4A542";
 const calendlyUrl =
-  "https://calendly.com/davegarrison/15min?utm_source=whygc-consulting&utm_medium=website";
+  "https://calendly.com/whygc/discovery-call?utm_source=whygc-consulting&utm_medium=website";
 
 // ─── Pain Points ────────────────────────────────────────────────────────────
 const painPoints = [
